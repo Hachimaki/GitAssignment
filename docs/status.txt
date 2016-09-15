@@ -1,1 +1,7 @@
 //Include the output of git status here
+
+C:\Users\hachi_000\Documents\GitAssignment [master ↑]> git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
