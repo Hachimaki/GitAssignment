@@ -19,7 +19,7 @@ public class MagicStaff extends BasicWeapon implements Weapon {
     @Override
     public int hit(int armor) {
     	//	Magic staff ignores 20% of armor
-        int damage = DAMAGE - (0.8f * armor);
+        int damage = DAMAGE - Math.round(0.8f * armor);
         if (damage < 0) {
             return 0;
         }

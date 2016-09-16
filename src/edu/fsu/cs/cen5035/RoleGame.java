@@ -15,11 +15,11 @@ public class RoleGame {
     	//	Variable to track max armor value used
     	int armor = 20;
     	
+    	//	Sword
         Weapon sword = WeaponFactory.getWeapon("sword");
         System.out.println("Sword has " + sword.hit() + " of damage.");
         System.out.println("Sword was able to do " + sword.hit(armor) + " of damage due to an armor with "+armor+ " points.");
         
-        //TODO: Add the remainig weapons here
         //	Arrow
         Weapon arrow = WeaponFactory.getWeapon("arrow");
         System.out.println("Arrow has " + arrow.hit() + " of damage.");
@@ -28,7 +28,7 @@ public class RoleGame {
         //	Axe
         Weapon axe = WeaponFactory.getWeapon("axe");
         System.out.println("Axe has " + axe.hit() + " of damage.");
-        System.out.println("Axes was able to do " + axe.hit(armor) + " of damage due to an armor with "+armor+ " points.");
+        System.out.println("Axe was able to do " + axe.hit(armor) + " of damage due to an armor with "+armor+ " points.");
         
         //	Magic staff
         Weapon magicStaff = WeaponFactory.getWeapon("magicStaff");

@@ -17,7 +17,7 @@ public class WeaponFactory {
         		return new Arrow();
         	case "axe":
         		return new Axe();
-        	case "magicStaff";
+        	case "magicStaff":
         		return new MagicStaff();
             case "sword":
                 return new Sword();

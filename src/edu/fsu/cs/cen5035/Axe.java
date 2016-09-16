@@ -18,13 +18,15 @@ public class Axe extends BasicWeapon implements Weapon {
 
     @Override
     public int hit(int armor) {
+    	int damage;
+    	
     	if (armor > 0 && armor < 20) {
     		//	If armor is greater than 0 and less than 20, ignore
-    		int damage = DAMAGE;
+    		damage = DAMAGE;
     	}
     	else {
     		//	Otherwise, apply the armor
-    		int damage = DAMAGE - armor;
+    		damage = DAMAGE - armor;
     	}
         
         if (damage < 0) {
