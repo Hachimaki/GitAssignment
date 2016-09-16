@@ -1,1 +1,44 @@
 // Answers to questions 9(a) through 9(g) from GitAssignment
+
+9. Answer the following questions in the answers.txt file, and then push the changed file to the repository:
+
+(a)	How many commits have been done to the repository by the end of step 8?
+
+	Not counting the six commits that have been added to the repository
+	prior to my fork, I have committed three times since forking the project.
+	Total, between the two repositories, there have been nine commits by
+	this point.
+
+(b) When was the file .gitignore modified last?
+
+	From the information available to me, the .gitignore file was last modified at 10:29AM EDT on Thursday, September, 15, 2016.
+
+(c) How many times was each of the files inside the src folder modified?
+
+	./src/edu/fsu/cs/cen5035/RoleGame.java			1 (Not modified after creation)
+	./src/edu/fsu/cs/cen5035/BasicWeapon.java		1 (Not modified after creation)
+	./src/edu/fsu/cs/cen5035/Sword.java				2 (Modified once after creation)
+	./src/edu/fsu/cs/cen5035/Weapon.java			1 (Not modified after creation)
+	./src/edu/fsu/cs/cen5035/WeaponFactory.java		1 (Not modified after creation)
+
+(d) What is the difference between git log and git status?
+
+	git log displays the full log of all commit messages in the repository since the initial commit, with author, timestamp, and commit ID hash.
+
+	git status shows the current status of the working directory of the local repository, including if there exist any files that have yet to be staged for a commit, how many commits the current branch is ahead or behind of the origin source, and what branch the user is currently working on.
+
+(e) What command would you use to see the commits where "RoleGame.java" was one of the committed files?
+
+	Given a path to "RoleGame.java" as <path>, the command would be:
+		git log -- <path>\RoleGame.java
+
+	In this assignment structure, the full path to RoleGame.java and the command to see all commits modifying the file is
+		git log -- src\edu\fsu\cs\cen5035\RoleGame.java
+
+(f) What command would you use to see the commits whose commit message contains the word "file?"
+
+	git log --grep=file
+
+(g) What command would you use to see the commits made by "Alice" between 09/01/2016 and 09/16/2016?
+
+	git log --committer=alice --after=08/31/2016 --until==09/16/2016
