@@ -13,6 +13,12 @@ public class WeaponFactory {
 
     public static Weapon getWeapon(String type) {
         switch (type) {
+        	case "arrow":
+        		return new Arrow();
+        	case "axe":
+        		return new Axe();
+        	case "magicStaff";
+        		return new MagicStaff();
             case "sword":
                 return new Sword();
             default:
